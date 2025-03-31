@@ -15,6 +15,3 @@ The cheat system operates using three devices or layers:
 - It passes the command to a Teensy microcontroller (via USB serial).
 - Teensy translates the command into raw mouse input using the Mouse.h library.
 - The input reaches the main PC as if a human moved and clicked.
-
-This allows the AI to perform click or movement actions without any in-game injection, memory access, or overlay.
-It operates fully externally and is very hard to detect without physical USB-level monitoring.
