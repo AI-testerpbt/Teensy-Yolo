@@ -1,0 +1,20 @@
+This file explains how the full system works. No cheat code is included or provided.
+
+The cheat system operates using three devices or layers:
+
+1. Main Gaming PC:
+- The game is running here.
+- OBS is used in fullscreen to mirror the game to the external AI device.
+
+2. External AI Laptop:
+- A trained YOLO model or object detection system processes the screen feed (from OBS or HDMI capture).
+- When a target is detected in a defined region (e.g., crosshair zone), a signal is sent to the receiver.
+
+3. Receiver + Teensy Device:
+- The receiver (Python script) listens for AI commands.
+- It passes the command to a Teensy microcontroller (via USB serial).
+- Teensy translates the command into raw mouse input using the Mouse.h library.
+- The input reaches the main PC as if a human moved and clicked.
+
+This allows the AI to perform click or movement actions without any in-game injection, memory access, or overlay.
+It operates fully externally and is very hard to detect without physical USB-level monitoring.
