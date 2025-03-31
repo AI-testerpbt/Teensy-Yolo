@@ -5,7 +5,7 @@ The system architecture:
 - Uses screen capture (OBS / capture card)
 - Runs an AI detection model (e.g., YOLO) to identify targets visually
 - Sends simple commands ("Move: x,y) to a Teensy 4.1 via a receiver script
-- Teensy translates these into **native mouse inputs** using "Mouse.h" – appearing 100% human to the game
+- Teensy translates these into **native mouse inputs** using "Mouse.h" like human-input
 - No COM port communication is used beyond receiving data — Teensy appears as a standard USB HID device (mouse/keyboard), with no overlays, no memory access, and no injected processes.
 
 How It Works
