@@ -1,6 +1,5 @@
 Purpose: Ethical disclosure of an AI + USB hardware-based bypass that simulates undetectable input in real-time using Teensy 4.1.
-This project demonstrates a stealth input bypass using external screen detection and USB HID spoofing. It operates entirely outside the game process, making it undetectable by current kernel-level anti-cheat methods (e.g., Vanguard).
-
+This project demonstrates a stealth input bypass using external screen detection and USB HID spoofing. It operates entirely outside the game process. You can encrypted the receiver.py to it harder to be detected (In theory).
 Users can rename the Teensy device to trusted hardware like Logitech USB Input, Razer Gaming Mouse, or any other generic name.
 
 The system architecture:
@@ -19,4 +18,4 @@ All interactions are external and hardware-based. The system mimics real user be
 
 Use responsibly in secure and isolated environments.
 
-This was my first project and developed from scratch without any prior coding experience. Over one months of learning and researching, I worked bring this idea to life. Thank you for your interest in my work!
+This was my first project and developed entirely from scratch without any prior coding experience. After one month of learning and researching, I brought this idea to life with the help of ChatGPT. Thank you for your interest in my work!
